@@ -508,7 +508,7 @@ img {
 
     @include mobile-only {
         display: block;
-        margin-top: -2.1rem;
+        margin-top: -.8rem;
     }
 
     @include breakpoint(medium) {
