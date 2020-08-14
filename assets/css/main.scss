@@ -330,7 +330,7 @@ img {
 .link_imgs_container{
     display: flex;
     justify-content: center;
-    margin : 5px;
+    margin-top : 5px;
 }
 
 .icon_container{
@@ -389,11 +389,14 @@ img {
 }
 
 .header_mes {
-    display: block;
-    margin-top: .1rem;
+    display: inline-block;
+    margin-top: .3rem;
+    margin-right: .3rem;
+    margin-left: .3rem;
     color: var(--job_font);
-    font-size: 0.75em;
+    font-size: 1rem;
     font-weight: 700;
+    line-height: normal;
 }
 
 .theme_changer {   
@@ -505,7 +508,7 @@ img {
 
     @include mobile-only {
         display: block;
-        margin: -2.1rem;
+        margin-top: -2.1rem;
     }
 
     @include breakpoint(medium) {
@@ -618,6 +621,7 @@ img {
 
     p {
         max-width: 49rem;
+        text-align: center;
     }
 
     a {

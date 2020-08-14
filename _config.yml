@@ -1,13 +1,12 @@
 
-title: Testing #Your awesome title
-email: #youremail@domain.com
-description: > # this means to ignore newlines until "baseurl"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: PaperCat #Your awesome title
+email: papercat404@gmail.com
+description:  # this means to ignore newlines until "baseurl"
+  Deep Learning, Machine Learing Studying site with Papers, Projects, ETC.
+  Using Korean as Primary Language
 
 baseurl: # the subpath of the site
-url: http://paper-cat.github.io/dsbook # the base hostname & protocol for your site
+url: http://paper-cat.github.io/papercat # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
 timezone:
@@ -18,11 +17,11 @@ google_analytics: #UA—XXXXXXXX-X
 disqus_shortname: #disqus shortname
 
 user:
-  name: Catbook
+  name: PaperCat
   pic: /assets/img/bame_profile.jpg
-  picAlt: "catbook"
-  job: a category-centric theme
-  message: 메세지 테스트 message
+  picAlt: "papercat"
+  # job: a category-centric theme
+  message: "Machine Learning 과 관련된 <br /> 모든 것들을 공부합니다."
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
