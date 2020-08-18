@@ -1,0 +1,27 @@
+I"�<h2 id="text-classification-proejct">Text Classification Proejct</h2>
+<p>Text Classification 은 Text 관한 문제중에 가장 기본적인 문제입니다. 복잡하지 않은 모델들도 좋은 성능을 보이는 경우가 많기 때문에 NLP 관련 개념이나 모델들을 공부하기에 좋은 시작점이라고 생각합니다.</p>
+
+<h2 id="구현된-모델">구현된 모델</h2>
+
+<ol>
+  <li>
+    <p>Convolutional neural networks for sentence classification
+<br />
+<a href="https://paper-cat.github.io/2020-08/paper1">설명 링크</a></p>
+  </li>
+  <li>
+    <p>Character-level Convolutional Networks for Text
+Classification
+<br />
+(아직 paper 설명 없음)</p>
+  </li>
+</ol>
+
+<h2 id="사용한-데이터셋">사용한 데이터셋</h2>
+<ol>
+  <li><a href="https://github.com/e9t/nsmc">Naver Sentiment Movie Corpus v1.0</a></li>
+</ol>
+
+<p><br /><br />
+계속 추가해 나갈 예정입니다.</p>
+:ET
