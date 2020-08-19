@@ -151,7 +151,7 @@ img {
     @include breakpoint(medium) {
         margin-left: auto;
         margin-right: auto;
-        max-width: 960px;
+        max-width: 1400px;
         padding-top: 2.5rem;
     }
 
@@ -162,10 +162,10 @@ img {
 }
 
 .main {
-    padding: 0.5rem;
+    padding: 1rem;
 
     @include breakpoint(medium) {
-        margin-left: 22rem;
+        margin-left: 18rem;
     }
 }
 
@@ -298,7 +298,7 @@ img {
     }
 
     @include breakpoint(medium) {
-        width: 18rem;
+        width: 15rem;
         height: 100%;
         min-height: 100%;
         overflow: scroll;
@@ -621,7 +621,7 @@ img {
 
     p {
         max-width: 49rem;
-        text-align: center;
+        text-align: left;
     }
 
     a {

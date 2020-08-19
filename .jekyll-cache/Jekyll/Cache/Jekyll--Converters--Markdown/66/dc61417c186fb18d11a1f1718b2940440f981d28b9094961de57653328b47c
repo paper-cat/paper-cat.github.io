@@ -1,0 +1,45 @@
+I"�<h1 id="character-level-cnn-paper-review">Character level CNN Paper review</h1>
+<hr />
+<h2 id="기본-소개">기본 소개</h2>
+
+<p><a href="https://arxiv.org/abs/1509.01626">https://arxiv.org/abs/1509.01626 논문 링크</a></p>
+
+<p>자연어 처리의 대부분의 Task 는 단어 기반으로 되어 있습니다. 2016년 당시에도 word2vec 같이 대부분의 연구가 word 기반으로 이루어졌습니다. 
+이 논문에서는, 여러 convolutional network 기반 연구가 많음에 기반해 character 단위의 Text Classification 모델을 연구해 제안합니다.</p>
+
+<h2 id="character-level-convolutional-network">Character-level convolutional Network</h2>
+
+<h3 id="key-module">Key Module</h3>
+
+<p>Convolution Layer 를 key module 로 사용하고 있다고 설명합니다. (자세한 내용은 수식으로 되어 있는데)</p>
+
+<p><img src="../assets/post_img/paper/paper2_1.png" alt="conv수식" /></p>
+
+<p>\(c\) : offset constant (padding)</p>
+
+<p>\(d\) : depth</p>
+
+<p>\(f_{ij}(x)\) : kernel function (weights) (i=1,2,….,m, j = 1,2,….n)</p>
+
+<p>\(g_{i}\) : input features with m input feature size</p>
+
+<p>\(h_{j}\) : output features with n output feature size</p>
+
+<p>\(h_{j}(y)\) : output by sum over i between \(g_{i}(x), f_{ij}(x)\)</p>
+
+<p>복잡하게 써놨지만, 일반적인 convolutional layer 와 같습니다.</p>
+
+<p>또 다른 key module 로 max pooling 을 언급합니다. Max pooling 덕분에 6개 이상의 깊은 모델을 학습할 수 있다고 합니다.</p>
+
+<p>이외에 Relu 를 사용했고, optimizer 로 SGD 를, batch size 128 등등을 사용했다고 합니다.</p>
+
+<h3 id="character-quantization">Character Quantization</h3>
+
+<p>Input 으로는, encode (one-hot encoding) 된 character 들을 일정 길이 만큼 받아서 학습한다고 합니다. 모르는 character나 빈칸의 경우는 0으로 encoding 합니다.</p>
+
+<p>알파벳, 숫자, 몇가지의 특수문자들을 다 합쳐서 총 70개의 character 를 사용했다고 합니다. 대문자 소문자의 경우도 후에 실험해서 비교합니다.</p>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+:ET
