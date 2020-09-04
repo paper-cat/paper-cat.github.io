@@ -28,6 +28,13 @@ layout: page
   {% if page.comment %}
   <div class="post_comment">
 
+    <script src="https://utteranc.es/client.js"
+        repo="paper-cat/paper-cat.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
     {% include disqus.html username = site.disqus.shortname %}
 
   </div>
