@@ -20,10 +20,19 @@ layout: page
     </span>
     {% endif %}
   </div>
+
+  <!--- Count Visitor --->
+  <div style="text-align: center;">
+    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+      target="_blank">
+      <img
+        src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+    </a>
+  </div>
+
   <div class="post_content">
     {{ content }}
   </div>
-
 
   {% if page.comment %}
   <div class="post_comment">
