@@ -21,8 +21,7 @@ layout: page
     {% endif %}
   </div>
 
-  <!--- Count Visitor --->
-  <div style="text-align: center;">
+  <div style="text-align: center; ">
     <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
       target="_blank">
       <img
@@ -33,6 +32,7 @@ layout: page
   <div class="post_content">
     {{ content }}
   </div>
+
 
   {% if page.comment %}
   <div class="post_comment">
