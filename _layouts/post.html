@@ -22,18 +22,18 @@ layout: page
   </div>
 
   <div style="text-align: center; ">
-    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'papercat' | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'papercat' | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url | remove_first : '/' }}"
       target="_blank">
       <img
-        src="http://hits.dwyl.com/{{ site.url | remove_first: 'papercat' | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+        src="http://hits.dwyl.com/{{ site.url | remove_first: 'papercat' | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url | remove_first : '/'}}.svg" />
     </a>
   </div>
 
   <div style="text-align: center; ">
-    <a href="http://hits.dwyl.com/{{ site.url }}{{ page.url }}"
+    <a href="http://hits.dwyl.com/{{ site.url }}"
       target="_blank">
       <img
-        src="http://hits.dwyl.com/{{ site.url | remove_first: 'papercat' | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+        src="http://hits.dwyl.com/{{ page.url }}.svg" />
     </a>
   </div>
 
