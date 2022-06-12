@@ -2,68 +2,34 @@
 layout: page
 ---
 <style>
-    body {
-      font-family: Arial;
-    }
-    
-    .split {
-      height: 100%;
-      width: 70%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
-    
-    .left {
-      left: 0;
-    }
-    
-    .right {
-      right: 0;
-    }
-    
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 10px;
-    }
-
-    .nocentered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 10px;
-    }
-    
-    .centered img {
-      width: 150px;
-      border-radius: 10%;
-    }
-    </style>
-
+.parent {
+    text-align: center;
+  }
+  .parent > ul {
+    display: inline-block;
+    list-style:none;
+    text-align: left;
+  }
+</style>
 <section class="aboutme post_content">
 
-    <div class="split left">
-        <div class="centered">
-            <img src="assets/img/profile.jpg">
+    <div>
+        <div style="text-align: center;">
+            <img src="assets/img/profile.jpg" width="200">
             <h1>Jong Hwi Park</h1>
         </div>
       </div>
       
-      <div class="split right">
-        <div class="nocentered">
-            <h4>UCSD Computer Science Bachelor</h4>
-            <h4>Yonsei University AI Master</h4>
-
-            <h4>AI Engineer / Data Scientist</h4>
-            <h4>Working @EMRO, South Korea</h4>
-            <h4>Contact : papercat404@gmail.com</h4>
+      <div style="text-align: center;">
+        <div class="parent">
+            <ul>
+                <li>UCSD Computer Science Bachelor</li>
+                <li>Yonsei University AI Master</li>
+                <br></br>
+                <li>AI Engineer / Data Scientist</li>
+                <li>Working @EMRO, South Korea</li>
+                <li>Contact : papercat404@gmail.com</li>
+            </ul>
         </div>
       </div>
 </section>
