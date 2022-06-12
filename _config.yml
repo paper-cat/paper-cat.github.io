@@ -21,7 +21,7 @@ user:
   pic: /assets/img/bame_profile.jpg
   picAlt: "papercat"
   # job: a category-centric theme
-  message: "Machine Learning 과 관련된 <br /> 모든 것들을 공부합니다."
+  message: "AI, CS와 관련된 <br /> 것들을 공부합니다."
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
